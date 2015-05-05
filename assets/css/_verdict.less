@@ -1,0 +1,51 @@
+.verdict-box{
+	.verdict{
+		background: @white;
+		padding-bottom: 100px;
+		text-align: center;
+		h1{
+			color: @red;
+			margin-bottom: 30px;
+		}
+	}
+	.verdict__list{
+		list-style: none;
+		position: relative;
+		padding: 0 50px 0 200px;
+		&:before{
+			content: url('../img/img-sign.png');
+			position: absolute;
+			left: 0;
+			top: 0;
+		}
+		li{
+			position: relative;
+			&:before{
+				content: '';
+				width: 6px;
+				height: 6px;
+				background: brown;
+				position: absolute;
+				vertical-align: middle;
+				margin-right: 5px;
+				top: 10px;
+				left: -14px;
+			}
+		}
+	}
+	.callback{
+		background: url('../img/forest2.jpg') no-repeat;
+		background-size: auto 100%;
+		background-position: center top;
+		overflow-y: hidden;
+		height: 525px;
+		.formStyle;
+		.form__wrap{
+			background: url('../img/img-table5.png') no-repeat;
+			height: 477px;
+		}
+		.form__legend{
+			margin-bottom: 55px;
+		}
+	}
+}

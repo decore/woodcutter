@@ -3,12 +3,14 @@
 @white: #fff;
 @red: #db3b2f;
 @brown: #592807;
+@coffee_brown: #5f3010;
 @light_brown: #ad8263;
 @dark_brown: #2b1303;
 @pastel: #fff4d8;
 @dark_grey: #5c5c5c;
 @rose: #f4e3d4;
 @coffee_milk: #ffe6ba;
+@olive: #838272;
 
 .baseFont (@size:14px, @line-height:1.5em, @style:normal, @weight:normal) {
 	font:@style @weight @size/@line-height 'clear_sansbold', Tahoma, Arial, sans-serif;
@@ -74,7 +76,6 @@
 
 .menuStyle(){
 	list-style: none;
-	}
 	.menu__item{
 		display: inline-block;
 		padding: 0;
@@ -89,4 +90,39 @@
 			text-decoration: none;
 		}
 	}
+}
 
+.formStyle(){
+	.form__wrap{
+		width: 826px;
+		margin: -65px auto 0 auto;
+		padding: 158px 105px 0 100px;
+	}
+	.form__legend{
+		text-align: center;
+		margin-bottom: 85px;
+		h4{
+			color: @red;
+		}
+		p{
+			font-family: 'open_sansregular'
+		}
+	}
+	.form__form{
+		text-align: center;
+		legend{
+			font-size: 24px;
+			margin-bottom: 30px;
+			span{
+				color: @red;
+				margin-right: 5px;
+			}
+		}
+		input+input{
+			margin-left: 30px;
+		}
+	}
+	.btn-submit{
+		margin-top: 20px;
+	}
+}

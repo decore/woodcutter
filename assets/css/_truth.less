@@ -1,0 +1,30 @@
+.truth{
+	text-align: center;
+	padding: 35px 0;
+	background: @white;
+	.comment{
+		position: relative;
+		&:nth-child(odd) .comment__bubble{
+			.transform(rotate(2deg));
+		}
+		&:nth-child(even) .comment__bubble{
+			.transform(rotate(-2deg));
+		}
+	}
+	.comment__bubble{
+		background: url('../img/commit.png') no-repeat;
+		width: 220px;
+		height: 175px;
+		margin: 0 auto;
+	}
+	.comment__text{
+		position: absolute;
+		top: 35px;
+		left: 50%;
+		margin-left: -83px;
+		width: 166px;
+	}
+	h1{
+		color: @red;
+	}
+}

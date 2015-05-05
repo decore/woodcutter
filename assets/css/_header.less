@@ -1,0 +1,141 @@
+.header-top{
+	background: @brown;
+	height: 35px;
+	.header-menu{
+		margin-left: 25px;
+		.menuStyle;
+		.menu__item.active .menu__link{
+			color: @red;
+		}
+		.menu__link{
+			padding: 6px;
+			color: @pastel;
+			font-size: 13px;
+		}
+	}
+	.logo{
+		position: absolute;
+		left: 50%;
+		margin-left: -127px;
+		top: 1px;
+		z-index: 100;
+	}
+	.social p{
+		color: @pastel;
+		margin-left: 35px;
+		margin-top: 7px;
+		float: left;
+	}
+	.social-menu{
+		margin-top: 5px;
+		.menuStyle;
+		.menu__link{
+			color: @pastel;
+			text-decoration: none;
+			i:before{
+				margin-left: 22px;
+				font-size: 22px;
+			}
+		}
+
+	}
+}
+.header-bottom{
+	background: url('../img/header-bg.png') no-repeat;
+	background-size: auto 110%;
+	min-height: 310px;
+	overflow: hidden;
+	position: relative;
+	border-bottom: 5px solid @dark_brown;
+	.phones, .address{
+		margin-top: 25px;
+		padding-left: 145px;
+		a{
+			display: block;
+			color: @red;
+			font-family: 'open_sansregular';
+			font-weight: bold;
+			font-size: 16px;
+		}
+		.phones__link{
+			text-decoration: none;
+			color: @brown;
+			font-size: 18px;
+			padding: 4px 0;
+			span{
+				color: @dark_grey;
+			}
+		}
+		h4{
+			color: @black;
+			font-family: 'open_sansregular';
+			letter-spacing: 1px;
+			font-weight: bold;
+		}
+	}
+	.address{
+		padding-left: 160px;
+	}
+	.main-bar{
+		background: url('../img/beam.png') no-repeat;
+		height: 135px;
+		position: absolute;
+		bottom: -5px;
+		width: 970px;
+		background-position: center bottom;
+	}
+	.main-menu{
+		margin: 25px 0 0 75px;
+		.menuStyle;
+		.menu__item{
+			width: 207px;
+			&.active .menu__link{
+				color: @red;
+			}
+			&:hover, &.active{
+				.menu__link{
+					background: url('../img/backing.png') no-repeat;
+					background-position: 0 8px;
+				}
+			}
+		}
+		.menu__link{
+			color: @brown;
+			padding: 15px 20px;
+			width: 190px;
+			span{
+				display: inline-block;
+				width: 100px;
+				white-space: pre-line;
+				text-decoration: none;
+				font-size: 18px;
+				font-weight: bold;
+				.text-shadow-multiple('1px 0 0 rgba(0,0,0,1)', '0 1px 0 rgba(0,0,0,1)');
+			}
+		}
+	}
+	.plank{
+		position: absolute;
+		top: 5px;
+		right: 15px;
+		.plank-btn{
+			background: url('../img/plank.png') no-repeat;
+			color: @white;
+			width: 250px;
+			height: 102px;
+			border: 0;
+			text-decoration: underline;
+			font-size: 29px;
+			line-height: 27px;
+			padding: 20px 65px 33px;
+			.text-shadow(1px 0 0 rgba(0,0,0,1));
+			.transform(rotate(-5deg));
+			&:focus, &:active{
+				outline: none;
+			}
+			&:hover{
+				text-decoration: none;
+			}
+		}
+	}
+}
