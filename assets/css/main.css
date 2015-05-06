@@ -4043,7 +4043,7 @@ span.error {
   color: #db3b2f;
 }
 .slider {
-  padding: 0 0 37px;
+  padding: 0 0 75px;
   position: relative;
 }
 .slider .slide__info {
@@ -4131,7 +4131,7 @@ span.error {
 .slider .owl-carousel:after {
   content: url('../img/slider-frame-bottom.png');
   position: absolute;
-  bottom: -7px;
+  bottom: -45px;
   left: 50%;
   margin-left: -959px;
   z-index: 10;
@@ -4139,7 +4139,7 @@ span.error {
 .slider .owl-controls {
   position: absolute;
   width: 126px;
-  bottom: 64px;
+  bottom: 27px;
   left: 50%;
   margin-left: -63px;
   z-index: 100;
