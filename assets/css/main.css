@@ -3282,19 +3282,22 @@ Copyright (c) 2015 Daniel Eden
   -webkit-animation-name: slideOutUp;
   animation-name: slideOutUp;
 }
-html {
-  width: 100%;
-  height: 100%;
-}
+/*html {width:100%; height:100%;}*/
 body {
-  overflow-x: hidden;
-  width: 100%;
-  height: 100%;
+  /*width:100%; height:100%;*/
   margin: 0px;
   padding: 0px;
   background: #fff;
   color: #000000;
   font: normal normal 14px/1.5em 'clear_sansbold', Tahoma, Arial, sans-serif;
+}
+.container {
+  min-width: 970px;
+  max-width: 970px;
+}
+.main {
+  min-width: 970px;
+  width: 100%;
 }
 img {
   border: 0px;
@@ -3601,13 +3604,48 @@ span.error {
 .header-top .social-menu .menu__link {
   color: #fff4d8;
   text-decoration: none;
+  /*&:hover{
+				color: @red;
+			}*/
 }
 .header-top .social-menu .menu__link:before {
-  margin-left: 22px;
+  margin-left: 0;
   font-size: 22px;
 }
-.header-top .social-menu .menu__link:hover {
-  color: #db3b2f;
+.header-top .social-menu .menu__item {
+  width: 20px;
+  height: 24px;
+  -webkit-transition: background 0.7s;
+  -moz-transition: background 0.7s;
+  -o-transition: background 0.7s;
+  transition: background 0.7s;
+  overflow: hidden;
+}
+.header-top .social-menu .menu__item:hover {
+  background: #db3b2f;
+}
+.header-top .social-menu .menu__item:hover a {
+  top: -20px;
+}
+.header-top .social-menu .menu__item a {
+  width: 100%;
+  height: 200%;
+  position: relative;
+  top: 0;
+  -webkit-transition: top 0.7s;
+  -moz-transition: top 0.7s;
+  -o-transition: top 0.7s;
+  transition: top 0.7s;
+}
+.header-top .social-menu .menu__item a:after {
+  text-align: center;
+  position: absolute;
+  width: inherit;
+  height: 50%;
+  left: 0;
+  bottom: 0;
+  line-height: 60px;
+  color: #404040;
 }
 .header-bottom {
   background: url('../img/header-bg.png') no-repeat;
@@ -3909,6 +3947,7 @@ span.error {
 .description {
   background: #ffffff;
   padding: 57px 0;
+  overflow-x: hidden;
 }
 .description .title {
   margin-bottom: 30px;
@@ -3917,8 +3956,9 @@ span.error {
   content: none;
 }
 .description__bar {
-  width: 1078px;
   margin: 0 auto;
+  background: url('../img/img-bar.png') no-repeat;
+  background-position: center top;
 }
 .description__item {
   margin-top: -65px;
@@ -4056,6 +4096,7 @@ span.error {
 .slider {
   padding: 0 0 75px;
   position: relative;
+  overflow-x: hidden;
 }
 .slider .slide__info {
   position: absolute;
@@ -4126,7 +4167,7 @@ span.error {
   right: 50px;
 }
 .slider .owl-carousel {
-  max-width: 1920px;
+  max-width: 100%;
   margin: 0 auto;
 }
 .slider .owl-carousel .owl-stage-outer {

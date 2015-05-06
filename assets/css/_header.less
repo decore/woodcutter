@@ -33,14 +33,42 @@
 			color: @pastel;
 			text-decoration: none;
 			&:before{
-				margin-left: 22px;
+				margin-left: 0;
 				font-size: 22px;
 			}
-			&:hover{
+			/*&:hover{
 				color: @red;
+			}*/
+		}
+		.menu__item{
+			width: 20px;
+			height: 24px;
+			.transition(background 0.7s);
+			overflow: hidden;
+			&:hover{
+				background: @red;
+				a{
+					top: -20px;
+					
+				}
+			}
+			a{
+				width: 100%;
+				height: 200%;
+				position: relative;
+				top: 0;
+				.transition(top 0.7s);
+				&:after {
+					text-align: center;
+					position: absolute;
+					width: inherit;
+					height: 50%;
+					left: 0;
+					bottom: 0;
+					line-height: 60px;
+					color: #404040; }
 			}
 		}
-
 	}
 }
 .header-bottom{
