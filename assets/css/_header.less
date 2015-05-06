@@ -36,13 +36,19 @@
 				margin-left: 22px;
 				font-size: 22px;
 			}
+			&:hover{
+				i:before{
+					color: @red;
+					.transition(ease-out 1s);
+				}
+			}
 		}
 
 	}
 }
 .header-bottom{
 	background: url('../img/header-bg.png') no-repeat;
-	background-size: auto 110%;
+	background-size: 100% 110%;
 	background-position: center bottom;
 	min-height: 310px;
 	overflow: hidden;

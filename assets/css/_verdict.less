@@ -1,7 +1,7 @@
 .verdict-box{
 	.verdict{
 		background: @white;
-		padding-bottom: 100px;
+		padding-bottom: 80px;
 		text-align: center;
 		h1{
 			color: @red;
@@ -11,15 +11,18 @@
 	.verdict__list{
 		list-style: none;
 		position: relative;
-		padding: 0 50px 0 200px;
+		padding: 0 60px 0 293px;
+		text-align: left;
 		&:before{
 			content: url('../img/img-sign.png');
 			position: absolute;
-			left: 0;
-			top: 0;
+			left: 45px;
+			top: -5px;
 		}
 		li{
 			position: relative;
+			padding: 5px 0;
+			font-family: 'open_sansregular';
 			&:before{
 				content: '';
 				width: 6px;
@@ -28,14 +31,14 @@
 				position: absolute;
 				vertical-align: middle;
 				margin-right: 5px;
-				top: 10px;
-				left: -14px;
+				top: 12px;
+				left: -17px;
 			}
 		}
 	}
 	.callback{
 		background: url('../img/forest2.jpg') no-repeat;
-		background-size: auto 100%;
+		background-size: 100% 100%;
 		background-position: center top;
 		overflow-y: hidden;
 		height: 525px;
@@ -43,9 +46,11 @@
 		.form__wrap{
 			background: url('../img/img-table5.png') no-repeat;
 			height: 477px;
+			padding-top: 165px;
 		}
 		.form__legend{
-			margin-bottom: 55px;
+			margin-bottom: 35px;
+			padding: 0 100px;
 		}
 	}
 }

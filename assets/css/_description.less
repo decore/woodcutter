@@ -1,9 +1,11 @@
 .description{
 	background: @white;
 	padding: 57px 0;
-	.title:after{
-		content: none;
+	.title{
 		margin-bottom: 30px;
+		&:after{
+			content: none;
+		}
 	}
 	&__bar{
 		width: 1078px;
@@ -11,7 +13,7 @@
 	}
 	&__text{
 		font-family: 'open_sansregular';
-		line-height: 1.4em;
+		line-height: 1.6em;
 		font-size: 13px;
 		&:before{
 			content: '';
@@ -21,6 +23,7 @@
 			height: 10px;
 			display: inline-block;
 			margin-top: 10px;
+			margin-bottom: 20px;
 		}
 	}
 }

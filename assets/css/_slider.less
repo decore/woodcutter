@@ -1,10 +1,10 @@
 .slider{
-	padding: 65px 0;
+	padding: 0 0 37px;
 	position: relative;
 	.slide__info{
 		position: absolute;
 		background: url('../img/img-table4.png') no-repeat;
-		top: -51px;
+		top: -50px;
 		width: 706px;
 		height: 300px;
 		right: 0;
@@ -18,23 +18,29 @@
 		height: 170px;
 		.slide__name{
 			position: absolute;
-			top: 5px;
-			width: 200px;
+			top: 3px;
+			width: 300px;
 			color: @coffee_brown;
 			font-size: 30px;
-			font-weight: bold;
+			padding-left: 25px;
+			font-family: 'open_sansregular';
 			.text-shadow-multiple('1px 0 0 rgba(0,0,0,1)', '0 1px 0 rgba(0,0,0,1)');
 		}
 		.slide__text{
 			position: absolute;
-			top: 20px;
-			width: 275px;
+			top: 13px;
+			width: 288px;
+			font-family: 'open_sansregular';
+			font-size: 14px;
 		}
 		.slide__conclusion{
 			position: absolute;
 			top: 120px;
-			width: 275px;
+			width: 288px;
 			color: @coffee_milk;
+			font-family: 'open_sansregular';
+			font-size: 13px;
+			line-height: 1.3em;
 		}
 	}
 	.first{
@@ -62,9 +68,10 @@
 		}
 	}
 	.owl-carousel{
-		margin-top: -55px;
+		max-width: 1920px;
+		margin: 0 auto;
 		.owl-stage-outer{
-			padding-top: 52px;
+			padding-top: 65px;
 		}
 		&:before{
 			content: url('../img/slider-frame-top.png');

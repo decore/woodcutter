@@ -1,21 +1,36 @@
 .footer{
-	background: url('../img/header-bg.png') 50% 40% no-repeat;
+	background: url('../img/header-bg.png') no-repeat;
+	background-size: 110% 120%;
+	background-position: center top;
 	min-height: 232px;
-	padding-top: 30px;
+	padding-top: 25px;
 	.footer__logo{
 		float: left;
-		margin-right: 15px;
+	}
+	.list__wrap{
+		margin-left: 160px;
 	}
 	.head{
 		color: @olive;
+		margin: 13px 0 5px 0;
+		font-family: 'open_sansregular';
+		font-size: 15px;
 	}
 	.list{
 		list-style: none;
 		.list__item{
-
+			padding: 0;
+			&.active .list__link{
+				text-decoration: none;
+				cursor: default;
+				color: @brown;
+			}
 		}
 		.list__link{
+			font-family: 'open_sansregular';
+			padding: 2px 0;
 			color: @red;
+			display: block;
 		}
 		.list__link:hover{
 			color: @brown;
@@ -30,20 +45,63 @@
 	.contacts{
 		.contacts__item{
 			color: @brown;
-			padding: 3px 0;
+			padding: 0;
+			a{
+				color: @brown;
+			}
 			span{
 				color: #5c5c5c;
 			}
 		}
 		.contacts__link{
 			color: @red;
+			font-family: 'open_sansregular';
 		}
 	}
 	.social{
+		padding-top: 37px;
 		.menuStyle;
 		.menu__link{
 			color: @brown;
 			text-decoration: none;
+			&:hover{
+				i:before{
+					color: @red;
+				}
+			}
+		}
+		.menu__item+.menu__item{
+			[class^="flaticon-"]:before, [class*=" flaticon-"]:before,
+			[class^="flaticon-"]:after, [class*=" flaticon-"]:after{
+				margin-left: 8px;
+			}
+		}
+		[class^="flaticon-"], [class*=" flaticon-"]{
+			&:after, &:before{
+				font-size: 24px;
+				margin-left: 0;
+			}
+		}
+	}
+	.devlink{
+		color: @red;
+		display: block;
+		position: relative;
+		margin-top: 15px;
+		span{
+			position: absolute;
+			top: 0;
+			right: 0;
+			font-size: 8px;
+			color: red;
+			display: inline-block;
+			line-height: 10px;
+			text-decoration: underline;
+		}
+		&:hover{
+			span{
+				text-decoration: none;
+			}
 		}
 	}
 }

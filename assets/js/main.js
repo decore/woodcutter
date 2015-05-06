@@ -11,6 +11,7 @@ $(document).ready(function() {
 		items: 2
 	});
 
+	$('.active a').click(function(e){e.preventDefault();});
 });
 
 // function accordion() {

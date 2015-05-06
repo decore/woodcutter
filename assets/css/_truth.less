@@ -7,7 +7,25 @@
 		&:nth-child(odd) .comment__bubble{
 			.transform(rotate(2deg));
 		}
-		&:nth-child(even) .comment__bubble{
+		&:nth-child(1){
+			>*{
+				margin-right: 80px;
+			}
+			.comment__text{
+				left: 40px !important;
+				margin: 0!important;
+			}
+		}
+		&:nth-child(3){
+			>*{
+				margin-left: 80px;
+			}
+			.comment__text{
+				left: 120px !important;
+				margin: 0!important;
+			}
+		}
+		&:nth-child(even).comment__bubble{
 			.transform(rotate(-2deg));
 		}
 	}
@@ -15,14 +33,16 @@
 		background: url('../img/commit.png') no-repeat;
 		width: 220px;
 		height: 175px;
-		margin: 0 auto;
+		margin: 0 auto 8px auto;
 	}
 	.comment__text{
 		position: absolute;
 		top: 35px;
-		left: 50%;
-		margin-left: -83px;
+		left: 73px;
 		width: 166px;
+	}
+	h2{
+		margin: 50px 0 10px 0;
 	}
 	h1{
 		color: @red;
