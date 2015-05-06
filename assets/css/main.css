@@ -3602,16 +3602,12 @@ span.error {
   color: #fff4d8;
   text-decoration: none;
 }
-.header-top .social-menu .menu__link i:before {
+.header-top .social-menu .menu__link:before {
   margin-left: 22px;
   font-size: 22px;
 }
-.header-top .social-menu .menu__link:hover i:before {
+.header-top .social-menu .menu__link:hover {
   color: #db3b2f;
-  -webkit-transition: ease-out 1s;
-  -moz-transition: ease-out 1s;
-  -o-transition: ease-out 1s;
-  transition: ease-out 1s;
 }
 .header-bottom {
   background: url('../img/header-bg.png') no-repeat;
@@ -3781,8 +3777,8 @@ span.error {
 }
 .request {
   background: url('../img/forest.jpg') no-repeat;
-  background-size: 100% 100%;
-  background-position: center top;
+  background-size: auto 200%;
+  background-position: center bootom;
   overflow-y: hidden;
   height: 525px;
 }
@@ -3923,6 +3919,21 @@ span.error {
 .description__bar {
   width: 1078px;
   margin: 0 auto;
+}
+.description__item {
+  margin-top: -65px;
+}
+.description__item:nth-child(1) img {
+  margin-left: -12px;
+}
+.description__item:nth-child(2) img {
+  margin-left: -14px;
+}
+.description__item:nth-child(3) img {
+  margin-left: -17px;
+}
+.description__item:nth-child(4) img {
+  margin-left: -16px;
 }
 .description__text {
   font-family: 'open_sansregular';
@@ -4332,7 +4343,7 @@ span.error {
   color: #592807;
   text-decoration: none;
 }
-.footer .social .menu__link:hover i:before {
+.footer .social .menu__link:hover:before {
   color: #db3b2f;
 }
 .footer .social .menu__item + .menu__item [class^="flaticon-"]:before,

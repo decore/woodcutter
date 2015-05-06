@@ -11,6 +11,11 @@ $(document).ready(function() {
 		items: 2
 	});
 
+	//Parallax
+	// $(".request").parallax({ speed : 0.3 });
+
+
+	//not active link
 	$('.active a').click(function(e){e.preventDefault();});
 });
 
