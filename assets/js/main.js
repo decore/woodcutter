@@ -11,9 +11,10 @@ $(document).ready(function() {
 		items: 2,
 		scrollPerPage: true,
 		itemsScaleUp:true,
-		mouseDrag : true,
-		touchDrag : true,
-		dragBeforeAnimFinish : true
+		itemsDesktop : [1199,2],
+		itemsDesktopSmall : [980,2],
+		itemsTablet: [768,2],
+		itemsMobile : [479,2],
 	});
 
 	//Parallax

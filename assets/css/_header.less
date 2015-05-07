@@ -28,23 +28,13 @@
 	.social-menu{
 		margin-top: 5px;
 		.menuStyle;
-		/*.menu__link{
-			color: @pastel;
-			text-decoration: none;
-			&:before{
-				margin-left: 10px;
-				font-size: 22px;
-			}
-			&:hover{
-				color: @red;
-			}
-		}*/
 		.menu__item{
 			position: relative;
 			width: 20px;
 			height: 20px;
 			line-height: 20px;
 			margin-right: 25px;
+			margin-top: 2px;
 			overflow: hidden;
 			background: @pastel;
 			text-align: center;
@@ -53,6 +43,9 @@
 				background: @red;
 				.menu__link{
 					top: -40px;
+					&:after{
+						color: @white;
+					}
 				}
 			}
 		}
@@ -72,12 +65,13 @@
 				line-height: 20px;
 			}
 			&:after{
+				.transition(linear 0.2s);
 				position: absolute;
 				bottom: 0;
 				left: 2px;
 				margin: 0;
 				font-size: 14px;
-				color: @white;
+				color: @brown;
 			}
 		}
 	}
@@ -132,20 +126,31 @@
 		.menuStyle;
 		.menu__item{
 			width: 207px;
+			position: relative;
+			&:after{
+				opacity: 0;
+				content: url('../img/backing.png');
+				position: absolute;
+				top: 8px;
+				left: 2px;
+				.transition(opacity 0.5s linear 0.5s);
+			}
 			&.active .menu__link{
 				color: @red;
 			}
-			&:hover, &.active{
-				.menu__link{
-					background: url('../img/backing.png') no-repeat;
-					background-position: 0 8px;
-				}
+			&.active:after{
+				opacity: 1 !important;
+			}
+			&:hover:after{
+				opacity: 1;
 			}
 		}
 		.menu__link{
 			color: @brown;
 			padding: 15px 20px;
 			width: 190px;
+			position: relative;
+			z-index: 1;
 			font-family: 'Open Sans', sans-serif;
 			span{
 				display: inline-block;
