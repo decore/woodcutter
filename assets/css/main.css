@@ -3701,6 +3701,9 @@ span.error {
   background: #592807;
   height: 35px;
 }
+.header-top .content {
+  position: relative;
+}
 .header-top .header-menu {
   margin-left: 25px;
   list-style: none;
