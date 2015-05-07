@@ -1,3 +1,6 @@
-.footer .social .menu__link{
-	float: left;
+.reasons .reasons__plank{
+	font-size: 19px;
+}
+.title{
+	z-index: expression(runtimeStyle.zIndex = 1, insertAdjacentHTML('afterBegin', ''));
 }

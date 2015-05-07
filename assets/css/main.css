@@ -3543,9 +3543,10 @@ input[type="submit"] {
   line-height: 0.9em;
 }
 .title:after {
-  content: url('../img/divider.png') no-repeat;
+  content: url('../img/divider.png');
   display: inline-block;
   margin-top: 35px;
+  overflow: visible;
 }
 .btn-submit {
   background: url('../img/btn-submit.png') no-repeat;
@@ -3838,7 +3839,7 @@ span.error {
   font-weight: 700;
   color: #592807;
   font-size: 20px;
-  padding: 3px 0;
+  padding-bottom: 3px;
   margin-left: -5px;
 }
 .header-bottom .phones-box .phones__link span,
@@ -3851,7 +3852,7 @@ span.error {
   /*font-family: 'Open Sans', sans-serif;*/
   font-weight: 700;
   font-size: 18px;
-  margin-top: 8px;
+  /*margin-top: 8px;*/
 }
 .header-bottom .phones-box .grey,
 .header-bottom .address-box .grey {
@@ -4038,7 +4039,7 @@ span.error {
   text-align: center;
   margin-bottom: 85px;
 }
-.request .form__legend h4 {
+.request .form__legend h3 {
   color: #db3b2f;
 }
 .request .form__legend p {
@@ -4104,7 +4105,7 @@ span.error {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 .instruction__img img {
   max-width: 200px;
@@ -4114,11 +4115,12 @@ span.error {
   font-size: 21px;
   line-height: 1.4em;
   text-align: center;
-  padding: 0 30px;
+  padding: 0 25px;
   margin: 0 auto;
   height: 110px;
   position: relative;
   margin-bottom: 25px;
+  font-weight: 700;
 }
 .instruction__plank:after {
   content: url('../img/divider3.png');
@@ -4164,7 +4166,6 @@ span.error {
   text-align: center;
 }
 .instruction__board h3 {
-  color: #db3b2f;
   margin-bottom: -5px;
   line-height: 32px;
 }
@@ -4352,6 +4353,8 @@ span.error {
 }
 .truth h1 {
   color: #db3b2f;
+  line-height: 45px;
+  margin-bottom: 23px;
 }
 .slider {
   padding: 0 0 75px;
@@ -4579,7 +4582,7 @@ span.error {
   text-align: center;
   margin-bottom: 85px;
 }
-.verdict-box .callback .form__legend h4 {
+.verdict-box .callback .form__legend h3 {
   color: #db3b2f;
 }
 .verdict-box .callback .form__legend p {
