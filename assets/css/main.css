@@ -4166,6 +4166,7 @@ span.error {
   text-align: center;
 }
 .instruction__board h3 {
+  color: #db3b2f;
   margin-bottom: -5px;
   line-height: 32px;
 }

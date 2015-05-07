@@ -4,3 +4,17 @@
 .title{
 	z-index: expression(runtimeStyle.zIndex = 1, insertAdjacentHTML('afterBegin', ''));
 }
+.slider .slide .slide__info{
+	top: 10px;
+	left: 50%;
+}
+	.slider .slide .slide__info .first, .slider .slide .slide__info .second{
+		position: absolute;
+		width: 50%;
+	}
+	.slider .slide .slide__info .first{
+		left: 0;
+	}
+	.slider .slide .slide__info .second{
+		right: 0;
+	}
