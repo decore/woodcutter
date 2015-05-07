@@ -1,7 +1,6 @@
 .instruction{
 	background: #fdeec0;
 	padding: 55px 0 20px;
-	min-height: 1120px;
 	.title{
 		margin-bottom: 20px;
 		&:after{
@@ -11,9 +10,9 @@
 	&__img{
 		text-align: center;
 		height: 220px;
-		display: flex;
-		justify-content: center;
-		align-items: center;
+		.displayflex;
+		.justify-content(center);
+		.align-items(center);
 		margin-bottom: 5px;
 		img{
 			max-width: 200px;
@@ -38,18 +37,28 @@
 		}
 	}
 	&__text{
-		font-family: 'Open Sans', sans-serif;
+		/*font-family: 'Open Sans', sans-serif;*/
 		ul{
 			margin-left: 17px;
 		}
 		ul li{
-			font-family: 'Open Sans', sans-serif;
+			/*font-family: 'Open Sans', sans-serif;*/
 			padding: 0;
+			&:nth-child(1), &:nth-child(2){
+				&:after{
+					content: '*';
+					color: @red;
+				}
+			}
+		}
+		span{
+			color: @red;
+			font-weight: 700;
 		}
 	}
 	&__note{
-		font-family: 'Open Sans', sans-serif;
-		margin-top: 47px;
+		/*font-family: 'Open Sans', sans-serif;*/
+		margin-top: 50px;
 		&:before{
 			content: '*';
 			color: @red;
@@ -62,14 +71,22 @@
 		width: 706px;
 		margin: 0 auto;
 		margin-top: 30px;
-		padding: 36px 85px;
+		padding: 45px 85px;
 		text-align: center;
-		h4{
+		h3{
 			color: @red;
 			margin-bottom: -5px;
+			line-height: 32px;
 		}
-		a{
+		.call-back{
 			color: @red;
+			display: inline-block;
+			line-height: 13px;
+			text-decoration: none;
+			border-bottom: 1px dashed @red;
+			&:hover{
+				border-bottom: none;
+			}
 		}
 		.tel-link{
 			color: @brown;
@@ -77,6 +94,7 @@
 			font-size: 40px;
 			display: block;
 			margin: 30px 0 10px 0;
+			font-weight: 800;
 		}
 	}
 }

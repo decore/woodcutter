@@ -1,9 +1,11 @@
 .choose{
-	background: url('../img/fire-bg.jpg') no-repeat;
-	min-height: 635px;
+	background: url('../img/fire.jpg') no-repeat;
+	height: 635px;
 	padding: 55px 0 0 0;
-	background-size: 100% 100%;
-	background-position: center;
+	/*background-size: 100% 100%;*/
+	background-attachment: fixed;
+	background-position: center bottom;
+	overflow: hidden;
 	.title{
 		h1{
 			color: @coffee_milk;
@@ -25,25 +27,31 @@
 			font-size: 45px;
 			padding-top: 240px;
 			text-align: center;
+			font-weight: 700;
 		}
 	}
 	&__item{
 		background: url('../img/img-table3.png') no-repeat;
 		width: 275px;
 		height: 370px;
-		padding: 135px 10px 0;
+		padding: 135px 10px 0 4px;
 		text-align: center;
 		margin-top: 20px;
 		margin-left: 45px;
-		h2{
-			margin-top: 25px;
-			text-align: center;
-			font-weight: bold;
-			font-family: 'Open Sans', sans-serif;
-			letter-spacing: 2px;
-			color: @brown;
-			.text-shadow-multiple('1px 0 0 rgba(0,0,0,1)', '0 1px 0 rgba(0,0,0,1)');
-		}
+		position: relative;
+	}
+	&__name{
+		position: absolute;
+		bottom: 50px;
+		left: 0;
+		text-align: center;
+		font-weight: 600;
+		/*font-family: 'Open Sans', sans-serif;*/
+		letter-spacing: 1px;
+		font-size: 45px;
+		color: @brown;
+		width: 100%;
+		.text-shadow-multiple('1px 0 0 rgba(0,0,0,1)', '0 1px 0 rgba(0,0,0,1)');
 	}
 	@media (max-width: 1175px){
 		&__bar{

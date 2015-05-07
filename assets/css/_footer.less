@@ -12,8 +12,8 @@
 	}
 	.head{
 		color: @olive;
-		margin: 13px 0 5px 0;
-		font-family: 'Open Sans', sans-serif;
+		margin: 10px 0 5px 0;
+		/*font-family: 'Open Sans', sans-serif;*/
 		font-size: 15px;
 	}
 	.list{
@@ -27,7 +27,7 @@
 			}
 		}
 		.list__link{
-			font-family: 'Open Sans', sans-serif;
+			/*font-family: 'Open Sans', sans-serif;*/
 			padding: 2px 0;
 			color: @red;
 			display: block;
@@ -37,18 +37,20 @@
 		}
 	}
 	.flex{
-		display: flex;
-		flex-wrap: nowrap;
+		.displayflex;
+		.flexwrap(nowrap);
 		.flex-left{
-			margin-right: 20px;
+			margin-right: 38px;
 		}
 	}
 	.contacts{
 		.contacts__item{
 			color: @brown;
 			padding: 0;
+			font-weight: 700;
 			a{
 				color: @brown;
+				text-decoration: none;
 			}
 			span{
 				color: #5c5c5c;
@@ -56,11 +58,20 @@
 		}
 		.contacts__link{
 			color: @red;
-			font-family: 'Open Sans', sans-serif;
+			/*font-family: 'Open Sans', sans-serif;*/
+		}
+	}
+	.flex-left .contacts__link{
+		display: inline-block;
+		line-height: 13px;
+		text-decoration: none;
+		border-bottom: 1px dashed @red;
+		&:hover{
+			border-bottom: none;
 		}
 	}
 	.social{
-		padding-top: 37px;
+		padding-top: 33px;
 		.menuStyle;
 		.menu__item{
 			position: relative;
@@ -110,7 +121,7 @@
 		color: @red;
 		display: block;
 		position: relative;
-		margin-top: 15px;
+		margin-top: 10px;
 		span{
 			position: absolute;
 			top: 0;
@@ -127,4 +138,12 @@
 			}
 		}
 	}
+}
+.no-flexbox{
+	.footer{
+		.flex-left, .flex-right{
+			display: inline-block;
+		}
+	}
+
 }

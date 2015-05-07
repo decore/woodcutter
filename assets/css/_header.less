@@ -84,33 +84,39 @@
 	overflow: hidden;
 	position: relative;
 	border-bottom: 5px solid @dark_brown;
-	.phones, .address{
-		margin-top: 25px;
+	.phones-box, .address-box{
+		margin-top: 30px;
 		padding-left: 145px;
 		a{
 			display: block;
 			color: @red;
-			font-family: 'Open Sans', sans-serif;
-			font-weight: 600;
+			/*font-family: 'Open Sans', sans-serif;*/
 			font-size: 16px;
 		}
 		.phones__link{
 			text-decoration: none;
+			font-weight: 700;
 			color: @brown;
-			font-size: 18px;
-			padding: 4px 0;
+			font-size: 20px;
+			padding: 3px 0;
+			margin-left: -5px;
 			span{
 				color: @dark_grey;
 			}
 		}
-		h4{
-			color: @black;
-			font-family: 'Open Sans', sans-serif;
-			letter-spacing: 1px;
-			font-weight: bold;
+		.address{
+			color: @brown;
+			/*font-family: 'Open Sans', sans-serif;*/
+			font-weight: 700;
+			font-size: 18px;
+			margin-top: 8px;
+		}
+		.grey{
+			color: @dark_grey;
+			margin: 2px 0 3px 0;
 		}
 	}
-	.address{
+	.address-box{
 		padding-left: 160px;
 	}
 	.main-bar{
@@ -128,7 +134,7 @@
 			width: 207px;
 			position: relative;
 			&:after{
-				opacity: 0;
+				.opacity(0);
 				content: url('../img/backing.png');
 				position: absolute;
 				top: 8px;
@@ -138,11 +144,8 @@
 			&.active .menu__link{
 				color: @red;
 			}
-			&.active:after{
-				opacity: 1 !important;
-			}
-			&:hover:after{
-				opacity: 1;
+			&.active:after, &:hover:after{
+				.opacity(1);
 			}
 		}
 		.menu__link{
@@ -151,14 +154,14 @@
 			width: 190px;
 			position: relative;
 			z-index: 1;
-			font-family: 'Open Sans', sans-serif;
+			/*font-family: 'Open Sans', sans-serif;*/
 			span{
 				display: inline-block;
 				width: 100px;
 				white-space: pre-line;
 				text-decoration: none;
 				font-size: 18px;
-				font-weight: bold;
+				font-weight: 700;
 				.text-shadow-multiple('1px 0 0 rgba(0,0,0,1)', '0 1px 0 rgba(0,0,0,1)');
 			}
 		}
@@ -169,16 +172,19 @@
 		right: 15px;
 		.plank-btn{
 			background: url('../img/plank.png') no-repeat;
+			vertical-align: middle;
+			.transform(translateZ(0));
 			color: @white;
 			width: 250px;
 			height: 102px;
 			border: 0;
 			text-decoration: underline;
-			font-size: 29px;
-			line-height: 27px;
+			font-size: 26px;
+			line-height: 25px;
 			padding: 20px 65px 33px;
 			.text-shadow(1px 0 0 rgba(0,0,0,1));
 			.transform(rotate(-5deg));
+			font-weight: 700;
 			&:focus, &:active{
 				outline: none;
 			}
