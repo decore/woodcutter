@@ -13,7 +13,7 @@
 	.head{
 		color: @olive;
 		margin: 13px 0 5px 0;
-		font-family: 'open_sansregular';
+		font-family: 'Open Sans', sans-serif;
 		font-size: 15px;
 	}
 	.list{
@@ -27,7 +27,7 @@
 			}
 		}
 		.list__link{
-			font-family: 'open_sansregular';
+			font-family: 'Open Sans', sans-serif;
 			padding: 2px 0;
 			color: @red;
 			display: block;
@@ -38,6 +38,7 @@
 	}
 	.flex{
 		display: flex;
+		flex-wrap: nowrap;
 		.flex-left{
 			margin-right: 20px;
 		}
@@ -55,31 +56,53 @@
 		}
 		.contacts__link{
 			color: @red;
-			font-family: 'open_sansregular';
+			font-family: 'Open Sans', sans-serif;
 		}
 	}
 	.social{
 		padding-top: 37px;
 		.menuStyle;
-		.menu__link{
-			color: @brown;
-			text-decoration: none;
+		.menu__item{
+			position: relative;
+			width: 24px;
+			height: 24px;
+			line-height: 24px;
+			overflow: hidden;
+			background: @brown;
+			text-align: center;
+			.transition(linear 0.2s);
 			&:hover{
-				&:before{
-					color: @red;
+				background: @red;
+				.menu__link{
+					top: -50px;
 				}
 			}
-		}
-		.menu__item+.menu__item{
-			[class^="flaticon-"]:before, [class*=" flaticon-"]:before,
-			[class^="flaticon-"]:after, [class*=" flaticon-"]:after{
+			&+.menu__item{
 				margin-left: 8px;
 			}
 		}
-		[class^="flaticon-"], [class*=" flaticon-"]{
-			&:after, &:before{
-				font-size: 24px;
-				margin-left: 0;
+		.menu__link{
+			position: relative;
+			top: 0;
+			text-decoration: none;
+			display: block;
+			.transition(linear 0.2s);
+			height: 75px;
+			width: 24px;
+			text-align: center;
+			&:before{
+				color: @pastel;
+				margin: 0;
+				font-size: 17px;
+				line-height: 25px;
+			}
+			&:after{
+				position: absolute;
+				bottom: 0;
+				left: 4px;
+				margin: 0;
+				font-size: 17px;
+				color: @white;
 			}
 		}
 	}

@@ -8,7 +8,12 @@ $(document).ready(function() {
 	$(".owl-carousel").owlCarousel({
 		mergeFit: true,
 		nav: true,
-		items: 2
+		items: 2,
+		scrollPerPage: true,
+		itemsScaleUp:true,
+		mouseDrag : true,
+		touchDrag : true,
+		dragBeforeAnimFinish : true
 	});
 
 	//Parallax

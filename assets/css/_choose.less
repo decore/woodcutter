@@ -15,7 +15,6 @@
 	}
 	&__bar{
 		background: url('../img/wood-frame.png') no-repeat;
-		background-size: 100%;
 		background-position: center bottom;
 		max-width: 1176px;
 		height: 425px;
@@ -40,10 +39,22 @@
 			margin-top: 25px;
 			text-align: center;
 			font-weight: bold;
-			font-family: 'open_sansregular';
+			font-family: 'Open Sans', sans-serif;
 			letter-spacing: 2px;
 			color: @brown;
 			.text-shadow-multiple('1px 0 0 rgba(0,0,0,1)', '0 1px 0 rgba(0,0,0,1)');
 		}
+	}
+	@media (max-width: 1175px){
+		&__bar{
+			background-size: 970px;
+		}
+		.col-xs-5:nth-child(1) .choose__item{
+			margin-left: 100px;
+		}
+		&__item{
+			margin-top: 90px;
+		}
+
 	}
 }

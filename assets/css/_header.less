@@ -22,51 +22,62 @@
 	}
 	.social p{
 		color: @pastel;
-		margin-left: 35px;
-		margin-top: 7px;
+		margin: 7px 22px 0 35px;
 		float: left;
 	}
 	.social-menu{
 		margin-top: 5px;
 		.menuStyle;
-		.menu__link{
+		/*.menu__link{
 			color: @pastel;
 			text-decoration: none;
 			&:before{
-				margin-left: 0;
+				margin-left: 10px;
 				font-size: 22px;
 			}
-			/*&:hover{
+			&:hover{
 				color: @red;
-			}*/
-		}
+			}
+		}*/
 		.menu__item{
+			position: relative;
 			width: 20px;
-			height: 24px;
-			.transition(background 0.7s);
+			height: 20px;
+			line-height: 20px;
+			margin-right: 25px;
 			overflow: hidden;
+			background: @pastel;
+			text-align: center;
+			.transition(linear 0.2s);
 			&:hover{
 				background: @red;
-				a{
-					top: -20px;
-					
+				.menu__link{
+					top: -40px;
 				}
 			}
-			a{
-				width: 100%;
-				height: 200%;
-				position: relative;
-				top: 0;
-				.transition(top 0.7s);
-				&:after {
-					text-align: center;
-					position: absolute;
-					width: inherit;
-					height: 50%;
-					left: 0;
-					bottom: 0;
-					line-height: 60px;
-					color: #404040; }
+		}
+		.menu__link{
+			position: relative;
+			top: 0;
+			text-decoration: none;
+			display: block;
+			.transition(linear 0.2s);
+			height: 60px;
+			width: 20px;
+			text-align: center;
+			&:before{
+				color: @brown;
+				margin: 0;
+				font-size: 14px;
+				line-height: 20px;
+			}
+			&:after{
+				position: absolute;
+				bottom: 0;
+				left: 2px;
+				margin: 0;
+				font-size: 14px;
+				color: @white;
 			}
 		}
 	}
@@ -85,8 +96,8 @@
 		a{
 			display: block;
 			color: @red;
-			font-family: 'open_sansregular';
-			font-weight: bold;
+			font-family: 'Open Sans', sans-serif;
+			font-weight: 600;
 			font-size: 16px;
 		}
 		.phones__link{
@@ -100,7 +111,7 @@
 		}
 		h4{
 			color: @black;
-			font-family: 'open_sansregular';
+			font-family: 'Open Sans', sans-serif;
 			letter-spacing: 1px;
 			font-weight: bold;
 		}
@@ -135,6 +146,7 @@
 			color: @brown;
 			padding: 15px 20px;
 			width: 190px;
+			font-family: 'Open Sans', sans-serif;
 			span{
 				display: inline-block;
 				width: 100px;
