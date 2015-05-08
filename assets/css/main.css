@@ -3628,7 +3628,7 @@ span.error {color:#f00; font-size:13px;}
   background: #592807;
   height: 35px;
 }
-.header-top .content {
+.header-top .container {
   position: relative;
 }
 .header-top .header-menu {
