@@ -4047,7 +4047,7 @@ span.error {color:#f00; font-size:13px;}
 }
 .request {
   background: url('../img/forest-bg.jpg') no-repeat;
-  background-position: center bootom;
+  background-position: center bottom;
   background-attachment: fixed;
   background-size: 100% auto;
   overflow-y: hidden;
