@@ -4307,7 +4307,7 @@ span.error {
 }
 .truth {
   text-align: center;
-  padding: 35px 0;
+  padding: 35px 0 45px;
   background: #ffffff;
 }
 .truth .comment {
@@ -4353,18 +4353,19 @@ span.error {
   left: 73px;
   width: 166px;
 }
-.truth h2 {
-  margin-top: 55px;
-}
-.truth h1 {
-  color: #db3b2f;
-  line-height: 45px;
-  margin-bottom: 23px;
-}
 .slider {
   padding: 0 0 75px;
   position: relative;
   overflow-x: hidden;
+}
+.slider h2 {
+  text-align: center;
+}
+.slider h1 {
+  color: #db3b2f;
+  line-height: 45px;
+  margin-bottom: 60px;
+  text-align: center;
 }
 .slider .slide img {
   display: block;
