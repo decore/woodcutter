@@ -17,15 +17,15 @@ a {
 	text-decoration:underline;
 	&:hover {text-decoration:none;}
 }
-p {padding:0px; margin:0px; .baseFont; color:@baseColor;}
-h1, h2, h3, h4, h5, h6, .title {margin:0px;.headerFont; color:@baseColor; }
+p {padding:5px 0px; margin:0px; .baseFont; color:@baseColor;}
+h1, h2, h3, h4, h5, h6, .title {padding:15px 0px; margin:0px;.headerFont; color:@baseColor; line-height: 1em;}
 h1 {font-size:52px;}
 h2 {font-size:45px;}
 h3 {font-size: 24px;}
 h4 {font-size:20px;}
 h5 {font-size: 18px;}
 h6 {font-size: 16px;}
-ol, ul {margin:0px; padding:0;}
+ol, ul {margin:0px; padding:0px 0px 0px 20px;}
 li {margin:0px; padding:3px 0px; .baseFont; color:@baseColor;}
 address {font-style:normal;}
 input[type="text"], input[type="password"], select, textarea {
@@ -45,16 +45,15 @@ input[type="submit"] {
 	font-size: 45px;
 	color: @black;
 	text-align: center;
-	line-height: 1.6em;
+	line-height: 1.3em;
 	font-family: 'clear_sansbold';
 	h1{
 		color: @red;
-		line-height: 0.9em;
 	}
 	&:after{
 		content: url('../img/divider.png');
 		display: inline-block;
-		margin-top: 35px;
+		margin-top: 25px;
 		overflow: visible;
 	}
 }
