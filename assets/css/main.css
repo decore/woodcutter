@@ -4259,7 +4259,7 @@ span.error {color:#f00; font-size:13px;}
   padding: 20px 0 0 0;
   background-attachment: fixed;
   background-position: center bottom;
-  background-size: 100% auto;
+  background-size: 100%;
   overflow: hidden;
 }
 .choose .title h1 {
