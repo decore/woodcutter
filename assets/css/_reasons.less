@@ -23,18 +23,20 @@
 	&__plank{
 		background: url('../img/wood-plank.png') no-repeat;
 		position: absolute;
+		display: table;
 		top: 195px;
 		height: 163px;
 		padding: 45px 40px 30px 15px;
 		color: @red;
 		font-size: 20px;
 		line-height: 1.4em;
-		text-align: center;
-		.displayflex;
-		.align-items(center);
-		.flexwrap(wrap);
 		font-weight: 700;
 		width: 100%;
+		span{
+			text-align: center;
+			display: table-cell;
+			vertical-align: middle;
+		}
 	}
 	&__text{
 		margin-top: -5px;
