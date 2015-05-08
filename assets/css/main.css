@@ -4005,9 +4005,9 @@ span.error {
   position: absolute;
   top: 195px;
   height: 163px;
-  padding: 45px 20px 30px 20px;
+  padding: 45px 40px 30px 15px;
   color: #db3b2f;
-  font-size: 21px;
+  font-size: 20px;
   line-height: 1.4em;
   text-align: center;
   display: -webkit-box;
@@ -4019,6 +4019,7 @@ span.error {
   -ms-flex-align: center;
   align-items: center;
   font-weight: 700;
+  width: 100%;
 }
 .reasons__text {
   /*font-family: 'Open Sans', sans-serif;*/

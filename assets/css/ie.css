@@ -4,24 +4,8 @@
 .title{
 	z-index: expression(runtimeStyle.zIndex = 1, insertAdjacentHTML('afterBegin', ''));
 }
-/*.slider .slide .slide__info{
-	top: 10px;
-	left: 50%;
-}*/
 
-/*	.slider .slide .slide__info .first, .slider .slide .slide__info .second{
-		position: absolute;
-		width: 50%;
-	}
-	.slider .slide .slide__info .first{
-		left: 0;
-	}
-	.slider .slide .slide__info .second{
-		right: 0;
-	}*/
-
-
-/*.owl-carousel{
+.owl-carousel{
 	width: 970px;
 	overflow: hidden;
 	padding-top: 68px;
@@ -44,9 +28,9 @@
 	.owl-carousel .slide .slide__info{
 		/*position: relative;*/
 		background: none;
-		top: 250px;
+		top: 290px;
 		padding: 20px 0;
-		height: auto;
+		height: 170px;
 		width: 970px;
 		left: -100%;
 		margin: 0;
@@ -54,35 +38,42 @@
 	.owl-carousel .slide .first, .owl-carousel .slide .second{
 		width: 485px;
 		left: 0;
-		bottom: 0;
+		top: 0;
 		height: 150px;
+		position: absolute;
 	}
-	.owl-carousel .slide .first{
-		float: left;
+	.owl-carousel .slide .second{
+		left: 50%;
 	}
 	.owl-carousel .slide .first .slide__name{
 		left: 0;
 		top: 0;
 		text-align: left;
+		white-space: nowrap;
+		width: auto;
 	}
 	.owl-carousel .slide .first .slide__text{
 		left: 170px;
+		top: 0;
 	}
 	.owl-carousel .slide .first .slide__conclusion{
 		color: #db3b2f;
-		top: 100px;
+		top: 80px;
 		left: 170px;
 	}
 	.owl-carousel .slide .second .slide__name{
 		left: 300px;
 		top: 0;
 		text-align: right;
+		width: auto;
+		white-space: nowrap;
 	}
 	.owl-carousel .slide .second .slide__text{
 		right: 170px;
+		top: 0;
 	}
 	.owl-carousel .slide .second .slide__conclusion{
 		color: #db3b2f;
-		top: 100px;
+		top: 80px;
 		right: 170px;
-	}*/
+	}
