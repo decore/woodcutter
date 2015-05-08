@@ -12,6 +12,9 @@
 		padding-top: 5px;
 		text-align: center;
 	}
+	.slide{
+		position: relative;
+	}
 	.slide img{
 		display: block;
 		width: 100%;
@@ -26,12 +29,13 @@
 		left: 0;
 		margin-left: -353px;
 		z-index: 1;
-		.displayflex;
+		/*.displayflex;*/
 	}
 	.first, .second{
 		position: relative;
-		width: 50%;
-		.flex(0 0 50%);
+		width: 48%;
+		display: inline-block;
+		/*.flex(0 0 50%);*/
 		height: 170px;
 		.slide__name{
 			position: absolute;
@@ -75,10 +79,10 @@
 			text-align: left;
 		}
 		.slide__text{
-			right: 50px;
+			right: 15px;
 		}
 		.slide__conclusion{
-			right: 50px;
+			right: 15px;
 		}
 	}
 	.owl-carousel{

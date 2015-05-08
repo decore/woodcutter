@@ -1,6 +1,6 @@
 .footer{
 	background: url('../img/header-bg.png') no-repeat;
-	/*background-size: 110% 120%;*/
+	background-size: 100% auto;
 	background-position: center top;
 	min-height: 232px;
 	padding-top: 25px;
@@ -77,9 +77,9 @@
 		}
 		.menu__item{
 			position: relative;
-			width: 24px;
-			height: 24px;
-			line-height: 24px;
+			width: 23px;
+			height: 23px;
+			line-height: 1.4em;
 			overflow: hidden;
 			background: @brown;
 			text-align: center;
@@ -87,7 +87,7 @@
 			&:hover{
 				background: @red;
 				.menu__link{
-					top: -50px;
+					top: -53px;
 				}
 			}
 			&+.menu__item{
@@ -101,18 +101,18 @@
 			display: block;
 			.transition(linear 0.2s);
 			height: 75px;
-			width: 24px;
+			width: 23px;
 			text-align: center;
 			&:before{
 				color: @pastel;
 				margin: 0;
 				font-size: 17px;
-				line-height: 25px;
+				line-height: 1.4em;
 			}
 			&:after{
 				position: absolute;
 				bottom: 0;
-				left: 4px;
+				left: 3px;
 				margin: 0;
 				font-size: 17px;
 				color: @white;

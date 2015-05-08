@@ -1,4 +1,4 @@
-.reasons .reasons__plank{
+/*.reasons .reasons__plank{
 	font-size: 19px;
 }
 .owl-carousel{
@@ -22,7 +22,6 @@
 		width: 100%;
 	}
 	.owl-carousel .slide .slide__info{
-		/*position: relative;*/
 		background: none;
 		top: 290px;
 		padding: 20px 0;
@@ -72,4 +71,8 @@
 		color: #db3b2f;
 		top: 80px;
 		right: 170px;
-	}
+	}*/
+/*.owl-carousel .slide .first, .owl-carousel .slide .second{
+	display: inline-block;
+	width: 48%;
+	}*/
