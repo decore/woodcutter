@@ -4551,6 +4551,7 @@ span.error {color:#f00; font-size:13px;}
   background-position: center top;
   min-height: 232px;
   padding-top: 25px;
+  min-width: 970px;
 }
 .footer .footer__logo {
   float: left;
